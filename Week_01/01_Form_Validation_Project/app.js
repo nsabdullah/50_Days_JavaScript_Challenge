@@ -38,7 +38,7 @@ function showSuccess(input) {
 
 function checkLenght(input) {
   if (input.value.length < 3) {
-    showErorr(input, `${getFildName(input)} must be more than 3 charector` );
+    showErorr(input, `${getFildName(input)} must be more than 3 charector`);
   }
 }
 
@@ -48,5 +48,5 @@ form.addEventListener("submit", function (event) {
 
   checkRequiredFields([username, email, password, password2]);
   checkLenght(username);
-   checkLenght(password);
+  checkLenght(password);
 });
